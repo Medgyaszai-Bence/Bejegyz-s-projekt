@@ -44,7 +44,12 @@ namespace BejegyzesProjekt
             }
             set
             {
+                if (tartalom != value)
+                {
+                    szerkesztve = DateTime.Now;
+                }
                 tartalom = value;
+
             }
         }
 
